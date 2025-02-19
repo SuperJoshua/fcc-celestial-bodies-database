@@ -122,7 +122,7 @@ ALTER SEQUENCE public.galaxy_galaxy_id_seq OWNED BY public.galaxy.galaxy_id;
 --
 
 CREATE TABLE public.moon (
-    mood_id integer NOT NULL,
+    moon_id integer NOT NULL,
     planet_id integer,
     name character varying(30) NOT NULL,
     radius_in_km numeric(6,2),
@@ -151,7 +151,7 @@ ALTER TABLE public.moon_mood_id_seq OWNER TO freecodecamp;
 -- Name: moon_mood_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: freecodecamp
 --
 
-ALTER SEQUENCE public.moon_mood_id_seq OWNED BY public.moon.mood_id;
+ALTER SEQUENCE public.moon_mood_id_seq OWNED BY public.moon.moon_id;
 
 
 --
@@ -247,10 +247,10 @@ ALTER TABLE ONLY public.galaxy ALTER COLUMN galaxy_id SET DEFAULT nextval('publi
 
 
 --
--- Name: moon mood_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
+-- Name: moon moon_id; Type: DEFAULT; Schema: public; Owner: freecodecamp
 --
 
-ALTER TABLE ONLY public.moon ALTER COLUMN mood_id SET DEFAULT nextval('public.moon_mood_id_seq'::regclass);
+ALTER TABLE ONLY public.moon ALTER COLUMN moon_id SET DEFAULT nextval('public.moon_mood_id_seq'::regclass);
 
 
 --
@@ -425,7 +425,7 @@ ALTER TABLE ONLY public.moon
 --
 
 ALTER TABLE ONLY public.moon
-    ADD CONSTRAINT moon_pkey PRIMARY KEY (mood_id);
+    ADD CONSTRAINT moon_pkey PRIMARY KEY (moon_id);
 
 
 --

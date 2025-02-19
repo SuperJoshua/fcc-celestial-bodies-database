@@ -96,3 +96,5 @@ git add .
 git commit -m "added five moons"
 git push
 psql --username=freecodecamp --dbname=postgres
+pg_dump -cC --inserts -U freecodecamp universe > universe.sql
+git add .
