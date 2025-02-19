@@ -93,3 +93,6 @@ pg_dump -cC --inserts -U freecodecamp universe > universe.sql
 git remote set-url origin https://github.com/SuperJoshua/fcc-celestial-bodies-database.git
 git checkout -b solution
 git add .
+git commit -m "added five moons"
+git push
+psql --username=freecodecamp --dbname=postgres
