@@ -308,6 +308,11 @@ INSERT INTO public.moon VALUES (12, 7, 'Oberon', 671.00, 13.46);
 INSERT INTO public.moon VALUES (13, 8, 'Triton', 1353.00, 5.87);
 INSERT INTO public.moon VALUES (14, 8, 'Nereid', 357.00, 360.00);
 INSERT INTO public.moon VALUES (15, 9, 'Charon', 606.00, 6.38);
+INSERT INTO public.moon VALUES (16, 9, 'Styx', 8.00, 20.16);
+INSERT INTO public.moon VALUES (17, 9, 'Nyx', 17.00, 24.85);
+INSERT INTO public.moon VALUES (18, 11, 'Vanth', 221.00, 9.53);
+INSERT INTO public.moon VALUES (19, 12, 'Hiiaka', 184.00, 42.12);
+INSERT INTO public.moon VALUES (20, 12, 'Namaka', 85.00, 18.27);
 
 
 --
@@ -358,7 +363,7 @@ SELECT pg_catalog.setval('public.galaxy_galaxy_id_seq', 7, true);
 -- Name: moon_mood_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.moon_mood_id_seq', 15, true);
+SELECT pg_catalog.setval('public.moon_mood_id_seq', 20, true);
 
 
 --
